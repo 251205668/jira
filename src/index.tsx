@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { AppProvider } from "contexts/index";
 import { DevTools, loadServer } from "jira-dev-tool";
 // 务必在jira-dev-tool后面引入
 import "antd/dist/antd.less";
@@ -10,8 +11,10 @@ import "antd/dist/antd.less";
 loadServer(() =>
   ReactDOM.render(
     <React.StrictMode>
-      <DevTools />
-      <App />
+      <AppProvider>
+        <DevTools />
+        <App />
+      </AppProvider>
     </React.StrictMode>,
     document.getElementById("root")
   )

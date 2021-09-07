@@ -1,9 +1,10 @@
-import { param, SearchPanel, User } from "./search-panel";
-import { project, SearchList } from "./search-list";
+import { SearchList } from "./search-list";
+import { SearchPanel } from "./search-panel";
 import React, { useEffect, useState } from "react";
 import * as qs from "qs";
-import { cleanObject } from "../../utils/params";
-import { useDebounceParam } from "../../Hooks";
+import { cleanObject } from "utils/params";
+import { useDebounceParam } from "Hooks";
+import { param, project, User } from "constants/interface";
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 export const Search = () => {
   // 表格渲染数据

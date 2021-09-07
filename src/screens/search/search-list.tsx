@@ -3,16 +3,9 @@
  * @param {*} param0
  * @returns
  */
+import { project, User } from "constants/interface";
 import React from "react";
-import { User } from "./search-panel";
 
-export interface project {
-  id: number;
-  name: string;
-  personId: number;
-  organization: string;
-  created: number;
-}
 interface SearchListProps {
   list: project[];
   users: User[];
