@@ -1,13 +1,11 @@
+import { useAuth } from "Hooks/auth";
 import React from "react";
-import "./App.css";
-import { Login } from "screens/login";
+import { AuthApp } from "screens/auth";
+import { UnAuthApp } from "screens/unAuth";
 
 function App() {
-  return (
-    <div className="App">
-      <Login></Login>
-    </div>
-  );
+  const { user } = useAuth();
+  return user ? <AuthApp /> : <UnAuthApp />;
 }
 
 export default App;

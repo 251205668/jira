@@ -7,6 +7,8 @@ export const handleResponse = ({ user }: { user: User }) => {
   return user;
 };
 
+export const getToken = () => localStorage.getItem(JIRA_TOKEN_KEY);
+
 export const loogut = async () => {
   window.localStorage.removeItem(JIRA_TOKEN_KEY);
 };

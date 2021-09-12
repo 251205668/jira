@@ -1,6 +1,6 @@
 import { useAuth } from "Hooks/auth";
 import React, { FormEvent } from "react";
-export const Login = () => {
+export const Register = () => {
   /**
    *
    * @param event 传入的事件类型为FormEvent<HTMLFormElement>
@@ -28,7 +28,7 @@ export const Login = () => {
           <label htmlFor="password">密码:</label>
           <input type="text" id={"password"} />
         </div>
-        <button type="submit">登录</button>
+        <button type="submit">注册</button>
       </form>
     </div>
   );

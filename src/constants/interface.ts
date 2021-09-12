@@ -26,3 +26,8 @@ export interface SearchPanelProps {
   param: param;
   setParam: (param: SearchPanelProps["param"]) => void;
 }
+
+export interface HttpConfig extends RequestInit {
+  data?: Object;
+  token?: string;
+}
