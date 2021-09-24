@@ -1,10 +1,10 @@
 import "./wdyr";
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { AppProvider } from "contexts/index";
 import { DevTools, loadServer } from "jira-dev-tool";
+import { AppProvider } from "contexts/index";
+import App from "./App";
 // 务必在jira-dev-tool后面引入
 import "antd/dist/antd.less";
 
